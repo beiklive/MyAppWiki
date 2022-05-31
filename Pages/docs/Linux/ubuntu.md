@@ -1,8 +1,11 @@
+
+# 创建快捷方式
+
 ## 进入图标文件目录
 ```bash
 $ cd /usr/share/applications
 ```
-## 創建圖標文件
+## 创建图标文件
 ```bash
 $ sudo vim myapp.desktop
 ```
@@ -19,3 +22,8 @@ StartupNotify=true      # 启动通知
 Type=Application        # 类型
 Categories=Application; # 分类
 ```
+
+
+# 分区挂载
+## VMware 磁盘扩容
+[https://www.likecs.com/show-203437057.html](https://www.likecs.com/show-203437057.html)

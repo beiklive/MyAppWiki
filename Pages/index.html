@@ -11,8 +11,36 @@
     <!-- 设置浏览器图标 -->
     <link rel="icon" href="./docsify_res/icon.svg" type="image/x-icon" />
     <link rel="shortcut icon" href="./docsify_res/icon.svg" type="image/x-icon" />
-    <!-- 默认主题 -->
+    <!-- 默认主题
     <link rel="stylesheet" href="./docsify_res/vue.css">
+    <link rel="stylesheet" href="./docsify_res/prism.css"> -->
+    <!-- docsify-themeable styles-->
+    <!-- Theme: Simple (latest v0.x.x) -->
+<link rel="stylesheet" href="./docsify_res/theme-simple.css"><style>
+        :root {
+            /* --heading-h1-font-weight: 500; */
+            --heading-h2-border-color:var(--theme-color);
+            /* --heading-h2-border-width: 0px 0px 1px 7px; */
+            /* --sidebar-nav-strong-border-color: hsl(0deg 0% 93%); */
+            /* 代码块背景色 */
+            --code-theme-background: hsl(0deg 0% 89% / 40%);
+            --cover-heading-color: #705c5c;
+            /* code radius */
+            --border-radius-m: 10px;
+            /* content max width */
+            --content-max-width: 85em;
+            /* Reduce the font size */
+            --base-font-size: 14px;
+            /* --sidebar-nav-strong-font-weight: 700; */
+            /* --sidebar-nav-link-color: hsl(0deg 0% 44%); */
+        
+            /* Change the theme color hue */
+            --theme-hue: 185;
+        
+            /* Change the sidebar bullets */
+            --sidebar-nav-link-before-content: '👾';
+        }
+    </style>
 </head>
 
 <body>
@@ -55,14 +83,22 @@
                 noData: '未找到结果，换个搜索词试试？',
                 depth: 4,
                 hideOtherSidebarContent: false,
-                namespace: 'Pages',
+                namespace: 'Pages'
+            },
+            share: {
+            reddit: true,
+            linkedin: true,
+            facebook: true,
+            twitter: true,
+            whatsapp: true,
+            telegram: true,
+        },
                 count:{
                     countable:true,
                     fontsize:'0.9em',
                     color:'rgb(90,90,90)',
                     language:'chinese'
                 }
-            }
         }
     </script>
     <!-- docsify的js依赖 -->
@@ -77,14 +113,17 @@
     <script src="./docsify_res/docsify-copy-code.min.js"></script>
     <!-- 字数统计 -->
     <script src="./docsify_res/countable.js"></script>
-
-  <!-- 代码高亮 -->
-  <script src="./docsify_res/prism-bash.min.js"></script>
-  <script src="./docsify_res/prism-c.min.js"></script>
-  <script src="./docsify_res/prism-json.min.js"></script>
-  <script src="./docsify_res/prism-shell-session.min.js"></script>
-  <script src="./docsify_res/prism-python.min.js"></script>
-  <script src="./docsify_res/prism-http.min.js"></script>
+    <!-- docsify-themeable (latest v0.x.x) -->
+    <script src="./docsify_res/docsify-themeable.min.js"></script>
+    <!-- 代码高亮 -->
+    <!-- https://unpkg.com/browse/prismjs@1.28.0/components/ -->
+    <script src="./docsify_res/prism-cpp.min.js"></script>
+    <script src="./docsify_res/prism-bash.min.js"></script>
+    <script src="./docsify_res/prism-c.min.js"></script>
+    <script src="./docsify_res/prism-json.min.js"></script>
+    <script src="./docsify_res/prism-shell-session.min.js"></script>
+    <script src="./docsify_res/prism-python.min.js"></script>
+    <script src="./docsify_res/prism-http.min.js"></script>
 
     
 </body>
